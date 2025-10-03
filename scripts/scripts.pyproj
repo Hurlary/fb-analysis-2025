@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1de0923c-3378-4dc5-93d4-5a76ca1696b0}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>run_dual_yolo_pipeline.py</StartupFile>
+    <SearchPath>..\utils\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Archive\convert_yolo_output_to_csv.py" />
+    <Compile Include="Archive\ffmpeg_helpers.py" />
+    <Compile Include="Archive\ffmpeg_helpers1.py" />
+    <Compile Include="Archive\run_dual_yolo_pipeline.py" />
+    <Compile Include="Archive\run_pipeline_mp.py" />
+    <Compile Include="Archive\run_yolo_verbose.py" />
+    <Compile Include="detect_players.py" />
+    <Compile Include="detect_players_and_ball.py" />
+    <Compile Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tools\normalize.py" />
+    <Compile Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tools\python\tf_sess_config.py" />
+    <Compile Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tools\zmqshell.py" />
+    <Compile Include="ffmpeg_helpers.py" />
+    <Compile Include="run_dual_yolo_pipeline.py" />
+    <Compile Include="split_video.py" />
+    <Compile Include="track_utils.py" />
+    <Compile Include="utils.py" />
+    <Compile Include="utils\bytetrack.py" />
+    <Compile Include="utils\csv_converter.py" />
+    <Compile Include="utils\dual_model_detector.py" />
+    <Compile Include="utils\ffmpeg_helpers.py" />
+    <Compile Include="utils\filters.py" />
+    <Compile Include="utils\kalman_filter.py" />
+    <Compile Include="utils\logging_utils.py" />
+    <Compile Include="utils\video_splitter.py" />
+    <Compile Include="utils\__init__.py.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\bootstrap.min.css" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\build_system.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\default.css" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\errno.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\ffmpeg.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\filter_design.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\infra.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\issue_tracker.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\libav-merge.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\mips.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\multithreading.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\optimization.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\rate_distortion.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\snow.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\style.min.css" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\swresample.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\swscale.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\t2h.init" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\tablegen.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\undefined.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc\writing_filters.txt" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tests\ref\lavf\apng.png" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tests\ref\lavf\gray16be.png" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tests\ref\lavf\rgb48be.png" />
+    <Content Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tools\bookmarklets.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Archive" />
+    <Folder Include="ffmpeg-7.1.1\" />
+    <Folder Include="ffmpeg-7.1.1\ffmpeg-7.1.1\" />
+    <Folder Include="ffmpeg-7.1.1\ffmpeg-7.1.1\doc" />
+    <Folder Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tests\" />
+    <Folder Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tests\ref\" />
+    <Folder Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tests\ref\lavf" />
+    <Folder Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tools" />
+    <Folder Include="ffmpeg-7.1.1\ffmpeg-7.1.1\tools\python" />
+    <Folder Include="utils" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

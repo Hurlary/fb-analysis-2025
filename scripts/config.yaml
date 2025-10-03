@@ -1,0 +1,6 @@
+
+video_input_dir: ../raw_videos
+video_output_dir: ../detections
+model_path: ../models/yolov8n.pt
+chunk_duration: 30
+tracker: bytetrack.yaml
